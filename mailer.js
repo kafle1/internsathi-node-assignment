@@ -33,7 +33,7 @@ async function sendMail(data) {
     });
 
     const mailOptions = {
-      from: `${data.name}`,
+      from: `${data.name} <kafleniraj@gmail.com>`,
       to: data.email,
       subject: data.subject,
       text: data.message,
