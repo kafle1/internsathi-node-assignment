@@ -26,4 +26,4 @@ app.post('/submit', async (req, res) => {
     return res.status(200).send('Email sent successfully');
 });
 
-app.listen(3000, () => console.log('Server listening on port 3000!'));
+app.listen(process.env.PORT || 3000, () => console.log('Server listening on port 3000!'));
